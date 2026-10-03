@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Dear madam jii ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ff9a9e,#fad0c4,#ffd1ff);
+overflow-x:hidden;
+text-align:center;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:10px;
+}
+
+.hero h2{
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.card{
+background:white;
+width:90%;
+max-width:900px;
+margin:40px auto;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+h2{
+margin-bottom:20px;
+color:#e91e63;
+}
+
+/* Floating Hearts */
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:25px;
+animation:float 8s linear infinite;
+opacity:0.7;
+pointer-events:none;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+100%{transform:translateY(-120vh);}
+}
+
+/* Gift Box */
+
+.gift{
+width:220px;
+height:180px;
+position:relative;
+margin:40px auto;
+cursor:pointer;
+}
+
+.box{
+width:220px;
+height:140px;
+background:#ff4d6d;
+position:absolute;
+bottom:0;
+border-radius:15px;
+}
+
+.lid{
+width:230px;
+height:50px;
+background:#ff758f;
+position:absolute;
+top:0;
+left:-5px;
+border-radius:15px;
+transform-origin:left center;
+transition:1.5s;
+z-index:10;
+}
+
+.box::before,
+.lid::before{
+content:"";
+position:absolute;
+width:25px;
+height:100%;
+background:gold;
+left:50%;
+transform:translateX(-50%);
+}
+
+.open{
+transform:rotate(-120deg);
+}
+
+.flowers{
+opacity:0;
+font-size:50px;
+transition:2s;
+transform:translateY(50px);
+}
+
+.showFlowers{
+opacity:1;
+transform:translateY(-90px);
+}
+
+.message{
+display:none;
+font-size:24px;
+color:#e91e63;
+font-weight:bold;
+margin-top:20px;
+}
+
+/* Gallery */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.gallery img{
+width:250px;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+}
+
+/* Timeline */
+
+.timeline{
+text-align:left;
+max-width:700px;
+margin:auto;
+}
+
+.timeline li{
+margin:20px 0;
+font-size:18px;
+line-height:1.6;
+}
+
+/* Cake */
+
+.candles{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.cake{
+font-size:120px;
+cursor:pointer;
+}
+
+.off{
+opacity:0.2;
+}
+
+#wish{
+font-size:22px;
+margin-top:20px;
+color:#e91e63;
+}
+
+/* Letter */
+
+.letter{
+font-size:20px;
+line-height:1.8;
+text-align:left;
+}
+
+footer{
+padding:30px;
+color:white;
+font-size:18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<h1>Happy Birthday ❤️</h1>
+
+<h2>Dear Madam jiii 👑</h2>
+
+<p>
+You are the one and only love in my life 💖😘
+</p>
+
+</div>
+
+<!-- GIFT -->
+
+<div class="card">
+
+<h2>🎁 Touch The Gift Box 🎁</h2>
+
+<div class="gift" onclick="openGift()">
+
+<div class="lid" id="lid"></div>
+
+<div class="box"></div>
+
+</div>
+
+<div class="flowers" id="flowers">
+🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷 🌷
+</div>
+
+<div class="message" id="giftMessage">
+Happy Birthday darling ❤️<br><br>
+You are the most beautiful gift in my life.
+</div>
+
+</div>
+
+<!-- PHOTOS -->
+
+<div class="card">
+
+<h2>📸 Our Memories</h2>
+
+<div class="gallery">
+
+<img src="images/madampic1.jpeg" alt="Memory 1">
+<img src="images/madampic2.jpeg" alt="Memory 2">
+<img src="images/madampic5.jpeg" alt="Memory 5">
+<img src="images/madampic6.jpeg" alt="Memory 6">
+<img src="images/madampic4.jpeg" alt="Memory 4">
+<img src="images/madampic3.jpeg" alt="Memory 3">
+<img src="images/madampic7.jpeg" alt="Memory 7">
+
+</div>
+
+<!-- TIMELINE -->
+
+<div class="card">
+
+<h2>📅 Our Beautiful Journey ❤️</h2>
+
+<ul class="timeline">
+
+<li>
+💍 <strong>1 December 2025</strong><br>
+The day I proposed you and started our beautiful love story.
+</li>
+
+<li>
+🌷 <strong>19 February 2026</strong><br>
+The day I gave you flowers and made one of our sweetest memories.
+</li>
+
+<li>
+😘 <strong>25 March 2026</strong><br>
+Our first kiss, the moment I will never forget.
+</li>
+
+<li>
+❤️ <strong>6 June 2026</strong><br>
+The day you kissed me, one of the happiest moments of my life.
+</li>
+
+<li>
+🫂<strong>26 September 2026</strong><br>
+The day we hug , that was a unforgotable moment😍😍
+</li>
+
+<li>
+🎂 <strong>Your Birthday</strong><br>
+The day the world received its most beautiful smile.
+</li>
+
+</ul>
+
+</div>
+
+<!-- CAKE -->
+
+<div class="card">
+
+<h2>🎂 Blow Out The Candles 🎂</h2>
+
+<div class="candles" id="candles">
+🕯️ 🕯️ 🕯️ 🕯️ 🕯️ 🕯️ 🕯️ 🕯️
+</div>
+
+<div class="cake" onclick="blowCandles()">
+🎂
+</div>
+
+<p id="wish"></p>
+
+</div>
+
+<!-- LETTER -->
+
+<div class="card">
+
+<h2>💌 A Letter For You</h2>
+
+<p class="letter">
+
+My Dearest Lady boss❤️😘,
+
+From the day I proposed you on 1 December 2025,
+to the day I gave you flowers on 19 February 2026,
+every moment with you has become a beautiful memory.
+
+Our first kiss on 25 March 2026 and the kiss you gave me on
+6 June 2026 are moments I will cherish forever.
+
+You bring happiness, peace, love and meaning into my life.
+
+Thank you for being a very big  part of my journey.
+
+On your birthday, I wish that every dream of yours comes true.
+
+May your smile always shine brighter than the stars.
+
+Happy Birthday My Love ❤️
+
+Forever Yours,
+
+Swapnil 😘😘😘❤️
+
+</p>
+
+</div>
+
+<footer>
+Made With ❤️ By Swapnil
+</footer>
+
+<script>
+
+function openGift(){
+
+document.getElementById("lid").classList.add("open");
+
+document.getElementById("flowers").classList.add("showFlowers");
+
+setTimeout(function(){
+
+document.getElementById("giftMessage").style.display="block";
+
+},1000);
+
+}
+
+function blowCandles(){
+
+document.getElementById("candles").classList.add("off");
+
+document.getElementById("wish").innerHTML=
+"✨ Make A Wish My Love ❤️ ✨";
+
+confetti();
+
+}
+
+for(let i=0;i<30;i++){
+
+let heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"%";
+
+heart.style.animationDuration=(Math.random()*5+5)+"s";
+
+document.body.appendChild(heart);
+
+}
+
+function confetti(){
+
+for(let i=0;i<100;i++){
+
+let c=document.createElement("div");
+
+c.innerHTML="🎉";
+
+c.style.position="fixed";
+
+c.style.left=Math.random()*100+"%";
+
+c.style.top="-20px";
+
+c.style.fontSize="25px";
+
+c.style.transition="3s";
+
+document.body.appendChild(c);
+
+setTimeout(()=>{
+c.style.top="100vh";
+},50);
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
